@@ -1,0 +1,53 @@
+Offline URL con check en Append /index.html
+Y aplicando el powershell para que funcione los menus desplegables tanto en pc como movil → Get-ChildItem -Path . -Recurse -Include *.html | Select-String 'url":"[^"]*index\.html"'
+
+Export usando CMD CLI → wp staatic publish, borrando la caché antes de hacer el publish desde CMD, la descarga del zip se hace desde Wordpress.
+
+Build ↓ 
+======================================
+Additional URL: 
+/
+/wp-sitemap.xml
+/robots.txt
+======================================
+
+======================================
+Additional Paths:
+"C:/Users/Shacko/Local Sites/shacko-editor-com/app/public/wp-content/uploads"
+======================================
+
+======================================
+Excluded URLs:
+/wp-json/*
+*/feed/*
+*.webm
+*/wp-sitemap.xml
+*/wpo/logs/*
+/feed/
+/comments/
+/comments/feed/
+*/feed/
+======================================
+
+
+
+Advanced ↓ 
+======================================
+Network HTTP Timeout:
+300
+======================================
+HTTP Delay:
+0
+======================================
+HTTP Concurrency:
+1
+======================================
+SSL Certificates:
+Disabled
+======================================
+Publication Task Timeout:
+900
+======================================
+Plugin Uninstall:
+Delete plugin settings
+Delete plugin data
